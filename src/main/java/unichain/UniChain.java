@@ -85,40 +85,6 @@ public class UniChain {
 
         isChainValid();
 
-
-
-
-        /*Transaction transaction = new Transaction(walletA.publicKey, walletB.publicKey, 23.45f, null);
-        transaction.generateSignature(walletA.privateKey);
-        boolean transactionValid = transaction.verifySignature();
-        System.out.println("Firma verificata? "+transactionValid);*/
-
-
-        /*Blocco genesisBlock = new Blocco("Primo blocco", "0");
-        blockchain.add(genesisBlock);
-        System.out.println("Mining block 1...");
-        blockchain.get(0).mineBlock(difficolta);
-
-        Blocco secondBlock = new Blocco("Secondo blocco", genesisBlock.hash);
-        blockchain.add(secondBlock);
-        System.out.println("Mining block 2...");
-        blockchain.get(1).mineBlock(difficolta);
-
-        Blocco thirdBlock = new Blocco("Terzo blocco", secondBlock.hash);
-        blockchain.add(thirdBlock);
-        System.out.println("Mining block 3...");
-        blockchain.get(2).mineBlock(difficolta);
-
-        if (isChainValid()) {
-            System.out.println("La blockchain E' VALIDA");
-        } else {
-            System.out.println("La blockchain NON E' VALIDA");
-        }
-
-        String jsonBlockchain = new GsonBuilder().setPrettyPrinting().create().toJson(blockchain);
-        System.out.println("---------------------------------------------------");
-        System.out.println("La blockchain è la seguente:");
-        System.out.println(jsonBlockchain);*/
     }
 
     public static boolean isChainValid() {
